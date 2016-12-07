@@ -1,5 +1,8 @@
 #header.full-header {
 
+  $c-header: $c-white;
+  $c-menu-trigger: $c-black-blue;
+
   width: 100%;
   font-family: $ff-lato;
   #primary-menu-trigger {
@@ -7,7 +10,7 @@
     pointer-events: auto;
   }
   #header-wrap {
-    //background-color: $c-clear;
+    background-color: $c-header;
     border-bottom: 0;
   }
   #logo {
@@ -20,10 +23,10 @@
     margin-right: 0;
     border-right: none;
 
-    @include nav-color($c-grey-nav);
-    @include nav-color($c-brick, 1);
-    @include nav-color($c-dark-purple, 2);
-    @include nav-color($c-purple, 3);
+    @include nav-color($c-light-grey);
+    @include nav-color($c-btn, 1);
+    @include nav-color($c-dark-teal, 2);
+    @include nav-color($c-teal, 3);
   }
   
   //when you scroll down
@@ -43,17 +46,14 @@
     #primary-menu-trigger {
       right: 0;
       left: inherit;
-      color: $c-darkish-purple;
-    }
-    #primary-menu .show {
-      background-color: rgba($c-light-pink, 0.85);
+      color: $c-menu-trigger;
     }
   }
   
 }
 
 #primary-menu ul li > a {
-  font-family: $ff-raleway;
+  font-family: $ff-lato;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: none;
@@ -65,13 +65,13 @@
     padding-bottom: 10px;
   }
   @media screen and (max-width: $width-lg) {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.7px;
     padding: 29px 8px;
     padding-bottom: 10px;
   }
   @media screen and (max-width: 1090px) {
-    font-size: 13px;
+    font-size: 15px;
   }
   @media screen and (max-width: 991px) {
     padding-left: 40px !important;
