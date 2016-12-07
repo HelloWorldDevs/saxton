@@ -118,29 +118,29 @@
     }
   });
 
-  $('.js-certificate-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 400,
-    autoplayTimeout: 3000,
-    autoplayHoverPause:false,
-    nav: false,
-    dots: false,
-    center: true,
-    responsive: {
-      480: {
-        items: 2
-      },
-      768: {
-        items: 3
-      },
-      992: {
-        items: 5,
-        autoplay: false
-      }
-    }
-  });
+  // $('.js-certificate-carousel').owlCarousel({
+  //   items: 1,
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 400,
+  //   autoplayTimeout: 3000,
+  //   autoplayHoverPause:false,
+  //   nav: false,
+  //   dots: false,
+  //   center: true,
+  //   responsive: {
+  //     480: {
+  //       items: 2
+  //     },
+  //     768: {
+  //       items: 3
+  //     },
+  //     992: {
+  //       items: 5,
+  //       autoplay: false
+  //     }
+  //   }
+  // });
 
   $('#google-map5').gMap({
     address: '33.7419963,-111.9834585',
