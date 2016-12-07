@@ -3,13 +3,13 @@
   max-height: 800px;
 
   .swiper-slide.slide1 {
-    background-image: url('/assets/loud-slide1-BG.jpeg');
+    background-image: url('/assets/saxton-slide1.jpg');
   }
   .swiper-slide.slide2 {
-    background-image: url('/assets/loud-slide3-BG.jpeg');
+    background-image: url('/assets/saxton-slide2.jpg');
   }
   .swiper-slide.slide3 {
-    background-image: url('/assets/loud-slide2-BG.jpeg');
+    background-image: url('/assets/saxton-slide3.jpg');
   }
 
   .swiper-slide .row {
@@ -19,63 +19,73 @@
   }
 
   .slide1 {
-    h4 {
-      line-height: $lh-sm;
-      color: $c-darkish-purple;
+    h1, h3 {
+      font-family: $ff-raleway;
+      color: $c-white;
+      font-weight: 400;
+      line-height: 1;
+    }
+    h1 {
+      @include font-size(135px, 85px, 75px, 65px, 20px);
+    }
+    h3 {
+
+    }
+    h2 {
+      color: $c-white;
+      font-family: $ff-advent;
+      margin-bottom: -10px;
+    }
+    h5 {
+      color: $c-white;
       font-family: $ff-lato;
     }
 
   }
   .slide2 {
-    h3 {
-      color: $c-darkish-purple;
-      font-weight: 700;
+    text-align: left;
+    h2 {
       margin-bottom: 0;
-      font-family: $ff-lato;
-      line-height: $lh-sm;
-      @include font-size(48px, 42px, 36px, 32px, 28px);
+      line-height: 1;
+    }
+    h3 {
+      color: $c-white;
+      font-family: $ff-advent;
+      margin-bottom: $spacing-sm;
+      @include font-size(55px, 45px, 35px, 30px, 25px);
+      line-height: 1;
     }
     .stars {
       margin-bottom: 0;
-      line-height: $lh-sm;
+      line-height: 1;
       .icon-star3 {
         text-shadow: 0 2px 4px rgba(0,0,0,0.5);
       }
     }
     h5 {
       font-family: $ff-lato;
-      color: $c-darkish-purple;
-      margin-bottom: 0;
-      line-height: $lh-lg;
-      margin-right: $spacing-sm;
-      &.quoter {
-        width: 50%;
-        margin-left: auto;
-        padding-bottom: $spacing-md;
-      }
-    }
-    .copy {
-      @include lr-padding(30px, 20px, 10px, 0px, 0px);
-    }
-    .quotee {
+      color: $c-white;
       margin-bottom: $spacing-md;
+      line-height: $lh-lg;
     }
   }
   .slide3 {
     h1 {
-      color: $c-darkish-purple;
+      color: $c-white;
       margin-bottom: 0;
-      font-weight: 700;
-      font-family: $ff-roboto-condensed;
+      font-weight: 400;
+      font-family: $ff-advent;
       line-height: $lh-sm;
     }
     h2 {
-      color: $c-brick;
+      color: $c-white;
+      font-weight: 400;
       line-height: $lh-sm;
-      font-family: $ff-lato;
+      font-family: $ff-raleway;
     }
     h4 {
-      color: $c-darkish-purple;
+      text-transform: uppercase;
+      color: $c-white;
       font-weight:bold;
       font-family: $ff-lato;
       line-height: $lh-sm;
