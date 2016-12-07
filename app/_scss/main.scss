@@ -43,7 +43,7 @@
 //@import "sections/location";
 @import "sections/marquee";
 @import "sections/phone-slab";
-//@import "sections/reviews";
+@import "sections/reviews";
 @import "sections/specials-2";
 //@import "sections/services";
 //@import "sections/tour";
@@ -53,3 +53,11 @@
 //    max-height: 600px;
 //  }
 //}
+
+//Fixes to Unique Reviews Widget
+.Container {
+  color: red;
+}
+.Container {
+  width: 100% !important;
+}
