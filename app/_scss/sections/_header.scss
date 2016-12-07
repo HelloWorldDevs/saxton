@@ -1,6 +1,5 @@
 #header.full-header {
 
-  position: absolute;
   width: 100%;
   font-family: $ff-lato;
   #primary-menu-trigger {
@@ -34,7 +33,7 @@
     }
   }
 
-  @media screen and (max-width: $whidth-md) {
+  @media screen and (max-width: $width-md) {
     #logo {
       img {
         margin-right: 100%;
