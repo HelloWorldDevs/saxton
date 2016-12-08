@@ -97,6 +97,32 @@
     }
   });
 
+  $('.js-services-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    autoplayTimeout: 6000,
+    autoplayHoverPause:true,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>'
+    ],
+    responsive: {
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+  
   $('.js-review-carousel').owlCarousel({
     items: 1,
     loop: true,

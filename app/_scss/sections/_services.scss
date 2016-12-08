@@ -60,6 +60,27 @@
     }
   }
 
+  .services-carousel {
+
+    &--image {
+      @include hover-plus;
+    }
+    &--title {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      z-index: 5;
+      h5 {
+        font-family: $ff-raleway;
+        color: $c-white;
+      }
+      a {
+        @include link-color($c-white);
+      }
+    }
+  }
+
   .service-modal-wrapper {
     & .modal-title {
       @include h3;
