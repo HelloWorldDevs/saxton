@@ -1,80 +1,63 @@
 #section-services {
-  background-image: url('/assets/bg-tile.jpg');
-  @include parallax-background();
-  position: relative;
+
+  //Colors
+
 
 
   .heading {
-    background-color: $c-darkish-purple;
-    h2 {
-      color: $c-white;
-      padding-top: $spacing-md;
-      @include h2;
-      font-weight: 600;
-    }
-    p {
-      color: $c-white;
-      padding-bottom: $spacing-sm;
-      a {
-        color: $c-light-blue;
-        text-decoration: underline;
-        &:hover {
-          color: $c-light-blue;
-          text-decoration: underline;
+
+  }
+
+  .services {
+    &--slab {
+      min-height: 350px;
+
+      h3 {
+        font-family: $ff-raleway;
+        margin-bottom: $spacing-xs;
+      }
+      p {
+        font-family: $ff-lato;
+        font-weight: 400;
+      }
+      .container {
+        padding-top: $spacing-md;
+        padding-bottom: $spacing-md;
+      }
+      &:nth-child(1) {
+        background-image: url("/assets/services/featured/cosmetic.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $c-teal-2;
+        color: $c-white;
+        h3 {
+          color: $c-white;
+        }
+      }
+      &:nth-child(2) {
+        background-image: url("/assets/services/featured/invisalign.jpg");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $c-grey-yellow;
+        p {
+          color: $c-grey;
+        }
+      }
+      &:nth-child(3) {
+        background-image: url("/assets/services/featured/cerec.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        h3 {
+          color: $c-grey-blue;
+        }
+        p {
+          color: $c-grey;
         }
       }
     }
-  }
-
-  .service-marquee {
-    background-image: url('/assets/services/family-parallax-BG.jpg');
-    @include parallax-background;
-    .spacer {
-      height: 400px;
-    }
-    .transparent-slab {
-      padding-top: $spacing-sm;
-      padding-bottom: $spacing-sm;
-      background-color: rgba($c-white, 0.75);
-      h2 {
-        font-family: $ff-roboto-condensed;
-        font-weight: 700;
-        color: $c-darkish-purple;
-        margin-bottom: 0;
-      }
-      p {
-        font-family: $ff-open;
-        color: $c-darkish-purple;
-      }
-    }
-  }
-
-  .services-grid {
-    background-color: $c-light-pink;
-    padding-top: $spacing-md;
-    padding-bottom: $spacing-md;
-
-    a {
-      @include link-color($c-darkish-purple);
-      &.learn-more {
-        text-decoration: underline !important;
-        @include link-color($c-blackish);
-      }
-    }
-    h4 {
-      font-family: $ff-roboto-condensed;
-      font-weight: 700;
-      margin-bottom: 0;
-    }
-    .service-image {
-      @include hover-plus;
-      margin-bottom: $spacing-sm;
-    }
-
-    .row>div {
-      padding: $spacing-sm;
-    }
-
   }
 
   .service-modal-wrapper {
