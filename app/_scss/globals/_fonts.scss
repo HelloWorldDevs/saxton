@@ -112,7 +112,7 @@ h5 {
 
 @mixin h6() {
 	@include headings();
-	@include font-size(18px, 18px, 17px, 17px, 17px);
+	@include font-size(20px, 19px, 18px, 17px, 17px);
 }
 
 .h6,
