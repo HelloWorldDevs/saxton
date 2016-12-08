@@ -1,16 +1,21 @@
 #section-reviews {
-  background-image: url('/assets/reviews-background.jpg');
+  background-image: url('/assets/reviews-bkgd.jpg');
   background-attachment: fixed;
   @include parallax-background;
 
   .heading {
     padding-top: $spacing-md;
     padding-bottom: $spacing-sm;
-    h2 {
-      font-family: $ff-roboto-condensed;
-      font-weight: 700;
-      color: $c-white;
-    }
   }
-
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-xs;
+    margin-top: $spacing-md;
+    font-family: $ff-raleway;
+    font-weight: 400;
+    color: $c-white;
+  }
+  .row {
+    padding-bottom: $spacing-lg;
+  }
 }
