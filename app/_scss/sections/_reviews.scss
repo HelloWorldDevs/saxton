@@ -2,6 +2,14 @@
   background-image: url('/assets/reviews-bkgd.jpg');
   background-attachment: fixed;
   @include parallax-background;
+  @media  screen and (max-width: $width-lg) {
+    background-attachment: inherit;
+    background-image: none;
+    background-color: $c-grey-orange;
+    h2 {
+      color: $c-grey-blue !important;
+    }
+  }
 
   .heading {
     padding-top: $spacing-md;
@@ -17,5 +25,13 @@
   }
   .row {
     padding-bottom: $spacing-lg;
+  }
+  .review-wrapper>div:last-child {
+    //max-height: 600px;
+  }
+  .mobile-image {
+    img {
+      width: 100%;
+    }
   }
 }

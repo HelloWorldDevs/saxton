@@ -17,7 +17,7 @@
 
   .phone-number {
     font-family: $ff-lato;
-    font-weight: 900;
+    font-weight: 700;
     @include link-color($c-phone);
     a:hover {
       text-decoration: none;

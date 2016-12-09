@@ -11,9 +11,11 @@
       margin-bottom: 0;
       padding-top: $spacing-md;
       padding-bottom: $spacing-sm;
+      
     }
     p {
       color: $c-grey;
+      font-family: $ff-lato;
       padding-bottom: $spacing-md;
       a {
         @include link-color($c-teal-link);

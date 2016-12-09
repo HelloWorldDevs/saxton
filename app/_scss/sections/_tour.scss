@@ -17,6 +17,10 @@
     }
   }
 
+  p {
+    font-family: $ff-lato;
+  }
+
   p:last-child {
     margin-bottom: $spacing-md;
   }
@@ -27,5 +31,10 @@
 
   .tour-carousel-item {
     display: none;
+  }
+  .row:last-child {
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+    }
   }
 }
