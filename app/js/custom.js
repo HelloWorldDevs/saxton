@@ -44,32 +44,7 @@
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid,.allow-orphan');
   HWD.mailForm('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
-  // $('.tour-carousel').owlCarousel({
-  //   items: 1,
-  //   loop: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 400,
-  //   autoplayTimeout: 6000,
-  //   autoplayHoverPause:true,
-  //   nav: true,
-  //   dots: false,
-  //   navText: [
-  //     '<img src="assets/chevron.png" alt="nav arrow"></img>',
-  //     '<img src="assets/chevron.png" alt="nav arrow"></img>'
-  //   ],
-  //   responsive: {
-  //     480: {
-  //       items: 2
-  //     },
-  //     768: {
-  //       items: 3
-  //     },
-  //     992: {
-  //       items: 4
-  //     }
-  //   }
-  // });
-  //
+
   $('.js-tour-carousel').owlCarousel({
     items: 1,
     loop: true,
@@ -113,37 +88,13 @@
     }
   });
 
-  // $('.js-certificate-carousel').owlCarousel({
-  //   items: 1,
-  //   loop: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 400,
-  //   autoplayTimeout: 3000,
-  //   autoplayHoverPause:false,
-  //   nav: false,
-  //   dots: false,
-  //   center: true,
-  //   responsive: {
-  //     480: {
-  //       items: 2
-  //     },
-  //     768: {
-  //       items: 3
-  //     },
-  //     992: {
-  //       items: 5,
-  //       autoplay: false
-  //     }
-  //   }
-  // });
-
   $('#google-map5').gMap({
-    address: '33.7419963,-111.9834585',
+    address: '36.8490793,-76.0278585',
     maptype: 'ROADMAP',
     zoom: 15,
     markers: [
       {
-        address: "33.7418339,-111.977643"
+        address: "36.8490793,-76.0278585"
       }
     ],
     doubleclickzoom: false,

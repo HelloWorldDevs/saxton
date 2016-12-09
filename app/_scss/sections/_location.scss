@@ -1,118 +1,129 @@
-.location-card {
-  background: $c-white;
-  margin: 30px 0;
-  border-radius: 0.1px;
-  font-family: $ff-lato;
-  @media (max-width: $width-md) {
-    margin-bottom: 5px;
-    margin-top: 0px;
-    background-color: rgba(255, 255, 255, 0);
-  }
-  img {
-    padding-top: $spacing-md;
-    padding-bottom: $spacing-sm;
-    padding-left: $spacing-sm;
-    padding-right: $spacing-sm;
-  }
-  h6 {
-    color: $c-darker-purple;
-    margin-bottom: 0;
-    line-height: $lh-sm;
-  }
-  a>h6 {
-    font-family: $ff-open;
-    color: $c-darkish-purple;
-    padding-bottom: $spacing-md;
-  }
-  .phone-number {
-    line-height: $lh-sm;
-    color: $c-darkish-purple;
-    font-family: $ff-roboto-condensed;
-    font-weight: 900;
-    margin-bottom: 0;
-    a:hover {
-      color: $c-darkish-purple !important;
-      text-decoration: none;
-    }
-    &:hover {
-      text-decoration: none;
+#section-location {
+  .card-wrapper {
+    float: left;
+    width: 50%;
+    height: 720px;
+    @media screen and (max-width: $width-sm) {
+      float: none;
+      width: 100%;
+      height: auto;
+      padding-top: $spacing-md;
+      padding-bottom: $spacing-sm;
     }
   }
-  .btn {
-    margin-top: $spacing-md;
-    margin-bottom: $spacing-sm;
-  }
-  h6:last-child {
-    padding-bottom: $spacing-lg;
-  }
-}
-
-#google-map5 {
-  height: 700px;
-  @media (max-width: $width-md) {
-    height: 300px;
-  }
-}
-
-#content .floating-card {
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  margin-left: -570px;
-  @media (max-width: $width-lg) {
-    margin-left: -435px;
-  }
-  @media (max-width: $width-md) {
-    padding-left: 0;
-    padding-right: 0;
-    position: static;
-    text-align: center;
-    width: 100% !important;
-    margin-left: 0px;
-    background-color: $c-white;
-    & .floating-card--col-fix {
-      padding-left: 0;
-      padding-right: 0;
+  .location-card {
+    @media screen and (min-width: $width-sm+1) {
+      @include  vertical-center;
     }
-  }
-}
-
-.hours-table {
-  //color: $c-grey-location;
-  padding-bottom: $spacing-md;
-  h5 {
-    color: $c-darkish-purple;
-    text-transform: capitalize;
+    background: $c-white;
+    margin: 30px 0;
+    border-radius: 0.1px;
     font-family: $ff-lato;
-    font-weight: 900;
-    margin-bottom: 0;
-  }
-  th {
-    width: 1px;
-    white-space: nowrap;
-    padding-right: 20px;
-    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    @media (max-width: $width-md) {
+      margin-bottom: 5px;
+      margin-top: 0px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+    img {
+      padding-bottom: $spacing-sm;
+    }
+    //address
+    p {
+      font-family: $ff-lato;
+      color: $c-black-blue;
+    }
+    h6 {
+      color: $c-grey-blue;
+      margin-bottom: 0;
+      line-height: $lh-sm;
+      font-family: $ff-lato;
+    }
+    //Click to View maps
+    a>h6 {
+      font-family: $ff-lato;
+      color: $c-teal-link;
+      padding-bottom: $spacing-md;
+    }
+    .btn {
+      margin-bottom: $spacing-md;
+    }
+    h6>span>a {
+      @include h4;
+      font-family: $ff-lato;
+      font-weight: 700;
+    }
+    .phone-number {
+      line-height: $lh-sm;
+      color: $c-grey-blue;
+      font-family: $ff-lato;
+      font-weight: 900;
+      margin-bottom: $spacing-md;
+      a:hover {
+        color: $c-grey-blue !important;
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .hours-table {
+      //color: $c-grey-location;
+      padding-bottom: $spacing-md;
+      h5 {
+        color: $c-grey-blue;
+        text-transform: capitalize;
+        font-family: $ff-lato;
+        font-weight: 900;
+        margin-bottom: 0;
+        padding-top: $spacing-md;
+      }
+      th {
+        width: 1px;
+        white-space: nowrap;
+        padding-right: 20px;
+        text-align: left;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      table {
+        max-width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $c-grey !important;
+      }
+    }
+
   }
 
-  td {
-    text-align: center;
+  .map-wrapper {
+    width: 50%;
+    display: inline-block;
+    float: right;
+    &>a {
+      display: block;
+    }
+    @media screen and (max-width: $width-sm) {
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+  }
+  #google-map5 {
+    height: 720px;
+    @media (max-width: $width-sm) {
+      height: 300px;
+    }
   }
 
-  table {
-    max-width: 250px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
 
-
-#google-map5 {
-  height: 820px;
-  @media (max-width: $width-md) {
-    height: 300px;
-  }
 }
 
 
