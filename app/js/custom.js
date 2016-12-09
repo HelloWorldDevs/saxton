@@ -137,20 +137,5 @@
     }
   });
 
-  // Syncing the tour carousel and modal tour carousel
-  // ======================================================================================
-  //
-  // $('.js-synced-carousel').click(function() {
-  //   var tourIndex = $(this).attr('js-carousel-target');
-  //   console.log(tourIndex);
-  //   $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
-  // });
-
-
-  // fix rendering ghost in tour modal
-  $('#tour-modal').on('shown.bs.modal', function() {
-    $('.tour-carousel-item').removeClass('tour-carousel-item');
-  });
-
 
 })(jQuery);
