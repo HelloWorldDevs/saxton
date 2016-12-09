@@ -1,28 +1,13 @@
 #section-tour {
   padding-top: $spacing-xs;
-  background-color: $c-white;
+  background-color: $c-grey-yellow;
 
-  .tour-carousel {
-    background-color: $c-blue-4;
+  .container {
+    padding-top: $spacing-lg;
+    padding-bottom: $spacing-lg;
   }
 
-  .heading {
-    text-align: center;
-    color: $c-blue-3;
-    font-weight: 600;
-    padding-top: $spacing-md;
-    padding-bottom: $spacing-md;
-    margin-bottom: 0;
-  }
-
-  div[class^=owl-item]>a {
-    @include hover-plus;
-  }
-  .tour-carousel-2 {
-    display: hidden;
-
-    .owl-item>.owl-item {
-      width: 100%;
-    }
+  .btn {
+    @include lr-padding(70px, 60px, 50px, 40px, 40px);
   }
 }
