@@ -1,10 +1,13 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: $c-darker-purple;
+  background-color: $c-grey-blue;
   border-top: none;
   a {
     @include link-color($c-white);
+    &:hover {
+      text-decoration: none !important;
+    }
   }
   p {
     font-weight: 100;
@@ -18,85 +21,91 @@
   @media screen and (max-width: $width-md) {
     text-align: center;
   }
-}
-
-
-a.si-facebook {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-  @media (max-width: $width-md) {
-    float: none;
-    margin-right: 0;
+  .footer--links {
+    text-align: right;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+    }
   }
 }
 
-.icon-facebook {
-  color: white;
-  font-size: 25px;
-  background-color: #3B5998;
-  width: 37px;
-  text-align: center;
-  border-radius: 8px;
-  //margin-right: 20px;
-  @media (max-width: $width-sm) {
-    float: none;
-    //margin-left: 20px;
-    margin-right: auto;
-  }
-}
-
-a.si-google {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-  @media (max-width: $width-md) {
-    float: none;
-  }
-  &:hover {
-    text-decoration: none;
-  }
-}
 //
-//.icon-google {
+//a.si-facebook {
+//  display: inline-block;
+//  float: right;
+//  margin-right: 20px;
+//  @media (max-width: $width-md) {
+//    float: none;
+//    margin-right: 0;
+//  }
+//}
+//
+//.icon-facebook {
 //  color: white;
 //  font-size: 25px;
-//  background-color: #b62b1c;
-//  border: 1px solid white;
+//  background-color: #3B5998;
 //  width: 37px;
 //  text-align: center;
 //  border-radius: 8px;
-//  float: right;
+//  //margin-right: 20px;
 //  @media (max-width: $width-sm) {
 //    float: none;
-//    margin-left: auto;
+//    //margin-left: 20px;
 //    margin-right: auto;
 //  }
 //}
-
-a.si-yelp {
-  display: inline-block;
-  float: right;
-  margin-right: 20px;
-  @media (max-width: $width-md) {
-    float: none;
-  }
-}
-
-.icon-yelp {
-  color: white;
-  font-size: 25px;
-  width: 37px;
-  text-align: center;
-  border-radius: 8px;
-  //margin-right: 20px;
-  @media (max-width: $width-sm) {
-    float: none;
-    //margin-left: 20px;
-    margin-right: auto;
-  }
-}
-
+//
+//a.si-google {
+//  display: inline-block;
+//  float: right;
+//  margin-right: 20px;
+//  @media (max-width: $width-md) {
+//    float: none;
+//  }
+//  &:hover {
+//    text-decoration: none;
+//  }
+//}
+////
+////.icon-google {
+////  color: white;
+////  font-size: 25px;
+////  background-color: #b62b1c;
+////  border: 1px solid white;
+////  width: 37px;
+////  text-align: center;
+////  border-radius: 8px;
+////  float: right;
+////  @media (max-width: $width-sm) {
+////    float: none;
+////    margin-left: auto;
+////    margin-right: auto;
+////  }
+////}
+//
+//a.si-yelp {
+//  display: inline-block;
+//  float: right;
+//  margin-right: 20px;
+//  @media (max-width: $width-md) {
+//    float: none;
+//  }
+//}
+//
+//.icon-yelp {
+//  color: white;
+//  font-size: 25px;
+//  width: 37px;
+//  text-align: center;
+//  border-radius: 8px;
+//  //margin-right: 20px;
+//  @media (max-width: $width-sm) {
+//    float: none;
+//    //margin-left: 20px;
+//    margin-right: auto;
+//  }
+//}
+//
 
 .footer-padding {
   padding: 40px 0px;
