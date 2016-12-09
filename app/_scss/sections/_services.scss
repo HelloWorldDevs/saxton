@@ -76,18 +76,26 @@
 
   .services-carousel {
 
+    &--item {
+      &>a {
+        line-height: 0;
+        display: block; 
+      }
+    }
+
     &--image {
       @include hover-plus;
     }
     &--title {
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
       text-align: center;
       width: 100%;
       z-index: 5;
       h5 {
         font-family: $ff-raleway;
         color: $c-white;
+        margin-bottom: 0;
       }
       a {
         @include link-color($c-white);

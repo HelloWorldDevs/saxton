@@ -90,7 +90,7 @@
   $('.js-services-carousel').owlCarousel({
     items: 1,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 400,
     autoplayTimeout: 6000,
     autoplayHoverPause:true,
