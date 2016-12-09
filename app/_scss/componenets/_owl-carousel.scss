@@ -2,14 +2,14 @@
   position: absolute;
   top: 50%;
   margin-top: -30px;
-  right: -16px;
+  right: 0;
   zoom: 1;
   width: 34px;
   height: 34px;
   line-height: 32px;
   color: $c-white;
-  background-color: $c-darkish-purple;
-  border: solid 2px $c-white;
+  background-color: rgba($c-black, 0);
+  border: none;
   font-size: 32px;
   border-radius: 0;
   opacity: 1;
@@ -17,7 +17,7 @@
   -o-transition: all .3s ease;
   transition: all .3s ease;
   & [class*=icon-] {
-    font-size: 15px;
+    font-size: 32px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,7 +29,7 @@
   }
 }
 .owl-carousel .owl-nav .owl-prev {
-  left: -16px;
+  left: 0;
   img {
     -moz-transform: scaleX(-1) translateY(-50%);
     -o-transform: scaleX(-1) translateY(-50%);
@@ -42,15 +42,15 @@
 
 .owl-carousel:hover .owl-nav .owl-next {
   left: auto;
-  right: -16px;
+  right: 0;
 }
 .owl-carousel:hover .owl-nav .owl-prev {
   opacity: 1;
-  left: -16px;
+  left: 0;
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
-  background-color: darken($c-darkish-purple, 10%) !important;
+  background-color: rgba($c-black, 0.2) !important;
   color: $c-white !important;
   text-decoration: none;
 }
