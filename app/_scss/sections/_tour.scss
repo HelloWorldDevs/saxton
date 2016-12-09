@@ -7,7 +7,25 @@
     padding-bottom: $spacing-lg;
   }
 
+
+  h2>a {
+    font-family: $ff-raleway;
+    color: $c-black-blue;
+    &:hover {
+      color: $c-black-blue;
+      text-decoration: none;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: $spacing-md;
+  }
+
   .btn {
     @include lr-padding(70px, 60px, 50px, 40px, 40px);
+  }
+
+  .tour-carousel-item {
+    display: none;
   }
 }
