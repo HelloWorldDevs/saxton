@@ -32,11 +32,10 @@
   }
 
   .card {
-    background-color: rgba($c-white, 0.75);
+    background-color: rgba($c-white, 0.8);
     text-align: center;
     height: 100%;
     border-radius: 0.1px;
-    color: $c-darkish-purple;
 
     .top {
       padding-bottom: 65px;
@@ -83,27 +82,36 @@
       }
       h6:first-child {
         padding-top: $spacing-md;
-        color: $c-darkish-purple;
+        color: $c-grey;
         font-weight: 700;
       }
       .copy {
         font-family: $ff-open;
         padding-left: $spacing-sm;
         padding-right: $spacing-sm;
-        color: $c-darkish-purple;
+        color: $c-grey;
       }
       p {
         padding-bottom: $spacing-md;
-        color: $c-darkish-purple;
+        color: $c-grey;
       }
     }
   }
   .card-1 .top {  background-color: $c-card1;  }
   .card-1 .price {  background-color: $c-card1;  }
+  .card-1 .bottom h6 {
+    color: $c-card1;
+  }
   .card-2 .top {  background-color: $c-card2;  }
   .card-2 .price {  background-color: $c-card2;  }
+  .card-2 .bottom h6 {
+    color: $c-card2;
+  }
   .card-3 .top {  background-color: $c-card3;  }
   .card-3 .price {  background-color: $c-card3;  }
+  .card-3 .bottom h6 {
+    color: $c-card3;
+  }
   .card-1 h6:first-child {  color: $c-white;  }
   .card-2 h6:first-child {  color: $c-white;  }
   .card-3 h6:first-child {  color: $c-white;  }

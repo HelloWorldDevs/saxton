@@ -47,6 +47,7 @@
     h2 {
       margin-bottom: 0;
       line-height: 1;
+      @include font-size(32px, 30px, 28px);
     }
     h3 {
       color: $c-white;
