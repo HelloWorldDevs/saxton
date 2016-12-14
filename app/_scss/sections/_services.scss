@@ -42,6 +42,10 @@
       }
       &:nth-child(1) {
         background-image: url("/assets/services/featured/cosmetic.jpg");
+        @media screen and (max-width: $width-sm) {
+          background-image: none;
+          min-height: 200px;
+        }
         background-position: right;
         background-repeat: no-repeat;
         background-size: contain;
@@ -54,6 +58,10 @@
       &:nth-child(2) {
         background-image: url("/assets/services/featured/invisalign.jpg");
         background-position: left;
+        @media screen and (max-width: $width-sm) {
+          background-image: none;
+          min-height: 200px;
+        }
         background-repeat: no-repeat;
         background-size: contain;
         background-color: $c-grey-yellow;
@@ -63,6 +71,10 @@
       }
       &:nth-child(3) {
         background-image: url("/assets/services/featured/cerec.jpg");
+        @media screen and (max-width: $width-sm) {
+          background-image: none;
+          min-height: 200px;
+        }
         background-position: right;
         background-repeat: no-repeat;
         background-size: contain;
